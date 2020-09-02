@@ -1,0 +1,28 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+.title h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-text-color);
+}
+
+.title h4 {
+  margin-bottom: 7rem;
+  font-weight: 300;
+}
+
+.title h4,
+.title h2 span {
+  color: var(--secundary-text-color);
+}
+
+.wrapper {
+  /* margin: 3rem 1rem; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10rem;
+}

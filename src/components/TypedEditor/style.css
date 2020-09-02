@@ -1,0 +1,59 @@
+.text-editor-wrap {
+  overflow: hidden;
+  width: 100%;
+  max-width: 530px;
+  z-index: 9999;
+  border-radius: 10px;
+  box-shadow: 0 20px 120px var(--primary-shadow-color);
+
+  transform: translateY(-100%);
+}
+
+.title-bar {
+  position: relative;
+  padding: 5px 0;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.85) 0px 1px 0px,
+    rgba(255, 255, 255, 0.45) 2px 2px 20px;
+  background-image: linear-gradient(to bottom, #383838, #1c1c1c);
+  box-shadow: inset rgba(85, 85, 85, 0.4) 0px 1px 4px;
+  border-bottom: #2b2b2b 1px solid;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.title-bar::before {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  /* margin: -20px 0 0 5px; */
+  border-radius: 5px;
+  background: #fc625d;
+  box-shadow: 0 0 0 1px #de413e, 19px 0 #fec041, 19px 0 0 1px #dda035,
+    37px 0 #35cc4b, 37px 0 0 1px #28aa36;
+}
+
+.text-body {
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  color: #f0f0f0;
+  text-shadow: #000 0px 1px 0px;
+  font-family: "Consolas", "Courier New", "Courier";
+  font-size: 1.45em;
+  line-height: 1.4em;
+  font-weight: 500;
+  text-align: left;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.shift {
+  height: 150px;
+  /* opacity: 0.5; */
+}

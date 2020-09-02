@@ -1,0 +1,54 @@
+.root {
+  position: relative;
+  height: 100%;
+}
+
+.controls-conatiner {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  padding: 1rem;
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: minmax(85px, 1fr) auto; */
+  grid-template-columns: 1fr;
+  justify-items: right;
+  color: #eee;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 0 20px 120px var(--primary-shadow-color);
+}
+
+.control {
+  display: grid;
+  grid-template-columns: minmax(85px, 1fr) auto;
+  gap: 10px;
+}
+
+.canvasCubes {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
+  height: 100%;
+  width: 100%;
+}
+
+.canvasParticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #eee;
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,62 @@
+.root {
+  --switch-width: 50px;
+  --switch-height: calc(var(--switch-width) * 0.5);
+  --switch-inner-padding: 5px;
+  --switch-circle-size: calc(
+    var(--switch-height) - calc(var(--switch-inner-padding) * 2)
+  );
+  /* --switch-background-color: grey; */
+  /* --switch-circle-color: #111; */
+
+  display: grid;
+  grid-template-columns: minmax(85px, 1fr) auto;
+  gap: 10px;
+}
+
+.input {
+  margin: 0;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  background: var(--switch-background-color);
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.label:after {
+  content: "";
+  position: absolute;
+  top: var(--switch-inner-padding);
+  left: var(--switch-inner-padding);
+  width: var(--switch-circle-size);
+  height: var(--switch-circle-size);
+  background: var(--switch-circle-color);
+  border-radius: 100px;
+  transition: 0.2s;
+}
+
+.input:checked + .label {
+  background: var(--switch-checked-background-color);
+}
+
+.input:checked + .label:after {
+  left: calc(100% - var(--switch-inner-padding));
+  transform: translateX(-100%);
+}
+
+.label:active:after {
+  width: calc(var(--switch-width) - var(--switch-inner-padding) * 2);
+}
+
+.label:hover::after {
+  width: calc(var(--switch-circle-size) + var(--switch-inner-padding) * 3);
+}

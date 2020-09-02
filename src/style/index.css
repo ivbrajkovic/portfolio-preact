@@ -1,0 +1,123 @@
+:root {
+  --primary-text-color: rgba(255, 255, 255, 0.87);
+  --secundary-text-color: rgba(255, 255, 255, 0.6);
+  /* --secundary-text-color: rgba(94, 128, 127, 0.87); */
+
+  --primary-color: rgba(23, 184, 144, 0.87);
+
+  --primary-shadow-color: rgba(23, 184, 144, 0.2);
+  /* --secundary-shadow-color: rgba(23, 184, 144, 0.2); */
+
+  --body-background: #222222;
+
+  --switch-circle-color: #111;
+  --switch-background-color: rgba(157, 197, 187, 0.87);
+  --switch-checked-background-color: var(--primary-color);
+
+  --typed-font-size: 3rem;
+  --typed-color-1: var(--primary-text-color);
+  --typed-color-2: var(--primary-color);
+
+  --social-color: var(--secundary-text-color);
+  --social-color-hover: var(--primary-color);
+}
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+
+  overflow-x: hidden;
+
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--primary-text-color);
+  background: var(--body-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70rem;
+  /* max-width: 1140px; */
+}
+
+#app {
+  height: 100%;
+}
+
+/* Animations */
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fadeIn.show {
+  opacity: 1;
+}
+
+.fadeUp {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: 1s;
+}
+
+.fadeUp.show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.fadeLeft,
+.fadeLeft100 {
+  opacity: 0;
+  transition: 1s;
+}
+.fadeLeft {
+  transform: translateX(-30%);
+}
+.fadeLeft100 {
+  transform: translateX(-100%);
+}
+
+.fadeLeft.show,
+.fadeLeft100.show {
+  opacity: 1;
+  transform: none;
+}
