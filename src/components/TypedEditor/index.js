@@ -12,8 +12,8 @@ import Typed from "typed.js";
 
 const typedText = [
   "I am^200 <span style='color: var(--typed-color-2);'>Ivan</span>",
-  // "I am^100 an^150 <span style='color: var(--typed-color-2);'>eng^50ineer</span>",
-  // "I am^100 a^150 <span style='color: var(--typed-color-2);'>deve^50loper</span>^1000",
+  "I am^100 an^150 <span style='color: var(--typed-color-2);'>eng^50ineer</span>",
+  "I am^100 a^150 <span style='color: var(--typed-color-2);'>deve^50loper</span>^1000",
 ];
 
 const TypedEditor = () => {
