@@ -20,7 +20,7 @@ const handleIntersect = (entries, observer) => {
     const className = entry.target.dataset.observeClass;
     if (!className) return;
 
-    if (entry.target.dataset.observeTriggerAdd === "enter")
+    if (entry.target.dataset.observeTrigger === "enter")
       entry.target.classList.add(className);
     else if (entry.isIntersecting) entry.target.classList.add(className);
     else entry.target.classList.remove(className);
@@ -33,7 +33,7 @@ const createObserver = (elements) => {
   const thresholds = [0];
   const options = {
     root: null,
-    rootMargin: "-200px 0px -200px 0px",
+    rootMargin: "-150px 0px -150px 0px",
     threshold: thresholds,
   };
 

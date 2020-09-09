@@ -20,9 +20,18 @@
 }
 
 .wrapper {
-  /* margin: 3rem 1rem; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 10rem;
+}
+
+.wrapper > div {
+  margin: 20px;
+  flex-basis: calc(calc(900px - 100%) * 9999);
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
