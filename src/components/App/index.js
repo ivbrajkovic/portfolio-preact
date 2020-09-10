@@ -58,8 +58,8 @@ function App() {
 
   return (
     <>
+      <SocialLinks />
       <header>
-        <SocialLinks />
         <Hero />
       </header>
 

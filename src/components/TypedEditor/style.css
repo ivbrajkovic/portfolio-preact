@@ -1,6 +1,8 @@
 .text-editor-wrap {
+  margin: 1rem;
   overflow: hidden;
   width: 100%;
+  /* min-width: 390px; */
   max-width: 530px;
   z-index: 9999;
   border-radius: 10px;
@@ -39,7 +41,7 @@
 }
 
 .text-body {
-  height: 250px;
+  height: 150px;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 1rem;
   color: #f0f0f0;
@@ -54,6 +56,16 @@
 }
 
 .shift {
-  height: 150px;
+  height: 80px;
   /* opacity: 0.5; */
+}
+
+@media (min-width: 600px) {
+  .text-body {
+    height: 250px;
+  }
+  .shift {
+    height: 150px;
+    /* opacity: 0.5; */
+  }
 }

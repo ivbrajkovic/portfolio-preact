@@ -69,9 +69,7 @@ const TypedEditor = () => {
       }}
     >
       <div class={classes["title-bar"]}>
-        <span class={classes["title"]}>
-          ~/Desktop/projects/portfolio - bash -- 80x10
-        </span>
+        <span class={classes["title"]}>~/portfolio - bash -- 80x10</span>
       </div>
 
       <div class={`${classes["text-body"]} ${shift ? classes.shift : ""}`}>
